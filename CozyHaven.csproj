@@ -1,0 +1,87 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.26" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.26" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.26">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+	  <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\AmenityService.cs" />
+    <Compile Remove="Services\AuthService.cs" />
+    <Compile Remove="Services\HotelService.cs" />
+    <Compile Remove="Services\UserService.cs" />
+    <Compile Remove="Services\PaymentService.cs" />
+    <Compile Remove="Services\RoomService.cs" />
+    <Compile Remove="Services\ReservationService.cs" />
+    <Compile Remove="Services\TokenService.cs" />
+    <Compile Remove="Services\ReviewService.cs" />
+    <Compile Remove="Interfaces\IAmenityAdminService.cs" />
+    <Compile Remove="Interfaces\IAuthService.cs" />
+    <Compile Remove="Interfaces\IHotelAdminService.cs" />
+    <Compile Remove="Interfaces\IAmenityOwnerService.cs" />
+    <Compile Remove="Interfaces\IHotelCustomerService.cs" />
+    <Compile Remove="Interfaces\IAmenityCustomerService.cs" />
+    <Compile Remove="Interfaces\IUserCustomerService.cs" />
+    <Compile Remove="Interfaces\IUserAdminService.cs" />
+    <Compile Remove="Interfaces\IUserHotelOwnerService.cs" />
+    <Compile Remove="Interfaces\IRoomCustomerService.cs" />
+    <Compile Remove="Interfaces\IPaymentCustomerService.cs" />
+    <Compile Remove="Interfaces\IHotelOwnerService.cs" />
+    <Compile Remove="Interfaces\IPaymentOwnerService.cs" />
+    <Compile Remove="Interfaces\IReviewCustomerService.cs" />
+    <Compile Remove="Interfaces\IReservationAdminService.cs" />
+    <Compile Remove="Interfaces\IReservationCustomerService.cs" />
+    <Compile Remove="Interfaces\IReviewHotelService.cs" />
+    <Compile Remove="Interfaces\ITokenService.cs" />
+    <Compile Remove="Interfaces\IPaymentAdminService.cs" />
+    <Compile Remove="Interfaces\IReviewAdminService.cs" />
+    <Compile Remove="Interfaces\IRoomAdminService.cs" />
+    <Compile Remove="Interfaces\IReservationHotelService.cs" />
+    <Compile Remove="Interfaces\IRoomHotelOwnerService.cs" />
+    <Compile Remove="Interfaces\IRepository.cs" />
+    <Compile Remove="Mappers\AmenityMapping.cs" />
+    <Compile Remove="Mappers\RegisterToUser.cs" />
+    <Compile Remove="Mappers\ReviewMapping.cs" />
+    <Compile Remove="Mappers\ReservationMapping.cs" />
+    <Compile Remove="Mappers\RoomMapping.cs" />
+    <Compile Remove="Mappers\RegisterToHotelOwner.cs" />
+    <Compile Remove="Mappers\RegisterToAdmin.cs" />
+    <Compile Remove="Models\DTOs\RegisterUserDTO.cs" />
+    <Compile Remove="Models\DTOs\PaymentDTO.cs" />
+    <Compile Remove="Models\DTOs\AmenityDTO.cs" />
+    <Compile Remove="Models\DTOs\HotelDTO.cs" />
+    <Compile Remove="Models\DTOs\LoginUserDTO.cs" />
+    <Compile Remove="Models\DTOs\ReservationDTO.cs" />
+    <Compile Remove="Models\DTOs\RoomDTO.cs" />
+    <Compile Remove="Models\DTOs\UserDTO.cs" />
+    <Compile Remove="Models\DTOs\ReviewDTO.cs" />
+    <Compile Remove="Repository\ReservationRepository.cs" />
+    <Compile Remove="Repository\RoomRepository.cs" />
+    <Compile Remove="Repository\HotelOwnerRepository.cs" />
+    <Compile Remove="Repository\AdminRepository.cs" />
+    <Compile Remove="Repository\AmenityRepository.cs" />
+    <Compile Remove="Repository\HotelRepository.cs" />
+    <Compile Remove="Repository\UserRepository.cs" />
+    <Compile Remove="Repository\ReviewRepository.cs" />
+    <Compile Remove="Repository\PaymentRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+</Project>
